@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Tacos de Buche</title>
+    <link rel="style.css">
+    <link rel="shortcut icon" href="Taquito.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/057f5db532.js" crossorigin="anonymous"></script>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+    </head>
+
+    <style class="css">
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+     text-decoration: none;/*quitar lineas*/ 
+}
+
+body{
+    background-image: url(16.gif); 
+  width: 100%;
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+    font-family: 'open sans';
+    font-size: 16px;    
+}
+/*fondo de la pagina*/
+.record {
+	width: 100%;
+	background: rgba(252, 251, 251, 0.9);
+    color: black	
+}
+.record li a:hover {	
+	display: block;
+	transition: all .6s ease-in-out;
+	transform: scale(1.06);
+	transition: all .8s out;
+}
+ul{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.contenedor{ 
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0 52px 0;
+}
+.slogan{
+    margin: 2PX;
+    padding: 35px;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align-last:justify;
+   line-height: 30px;
+    
+}
+.parrafo{
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    color: black;
+}
+.foot{
+    width: auto;
+    height: auto;  
+    text-decoration: white;
+    color: white;
+}
+.titulo-footer{
+    color: rgb(0, 65, 245);
+    text-align: center;
+    font-size: 56px;
+}
+/*Formulario*/
+footer{/*alrededor del formulario*/
+    text-decoration: white;
+    width: 650px;
+    margin:auto;
+    background: rgba(0, 0, 0,.1);
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+input, textarea{ /*letras*/
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border:none;
+}
+textarea{ /*modificar las letras*/
+   min-height: 100px;  
+   max-height: 200px;
+   max-width: 100%;
+}
+#boton{
+    background: #5581f1;
+    color:#fff;
+    padding: 10px;
+}
+#boton:hover{
+    cursor:pointer;/*el cursor cambia*/
+}
+@media (max-width){/*cuando llegue a 480 ocupara el 80%*/
+    from{
+        width: 80%;
+    }
+}
+input[type="text"], input[type="email"]{
+    padding:4px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: white;
+    padding: 13px;
+    border: none;
+    color: black;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+input [type="submit"]{
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: white;
+    background: black;
+    width: 96px;
+}
+/*codigo del boton*/
+.form-cont {
+    display: block;
+    position: static;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(32,32,32,1) 0%, rgba(40,40,40,1) 35%, rgba(64,64,64,1) 100%);
+  }
+  form input[type="text"],
+  form input[type="email"]{
+      padding:3px 10px;
+      border:1px solid #f6f6f6;
+      border-radius:3px;
+      background-color:#f6f6f6;
+      margin:8px 0;
+      display:inline-block;
+  }
+  /*codigo de menu pricipal*/
+  .padre{
+      display: flex;/*alterar sus dimensiones*/
+      flex-flow: column nowrap;/*Main-axis es la dirección de bloque con main-start y main-end opuesto. Los artículos flex se distribuyen en múltiples líneas */
+  }
+  .menu{
+    background:rgba(0, 0, 0,.1);/*trasparencia**/
+    display: flex;/**/
+    flex-flow: row nowrap;/*alinear contenedor*/
+    height: 100px;
+    align-items: center;
+  }
+  .logo{
+      flex: 1 1auto;
+  }
+  .logo a{
+font-size: 25px;
+color:rgba(252, 251, 251, 0.9);
+font-family: 'open sans';
+  }
+  .logo a:hover{
+      color:#343434;/*clic cambia de color*/
+  }
+  .nav{
+      flex: 1 1 auto;/*permite a un contenedor distribuir el espacio libre a sus elementos*/
+      text-align: right;
+  }
+  .nav a{
+      color:rgba(252, 251, 251, 0.9);
+      font-family: 'open sans';
+font-size: 15px;
+text-transform: uppercase;
+padding:0 10px;
+letter-spacing: 2px;
+  }
+.nav a:hover{
+    color:#343434;/*clic cambia de color*/
+}
+ul, ol {
+    list-style:none;
+}
+.nav > li {
+    float:left;
+
+}
+.nav{
+    margin: 220px;
+    text-align: right;
+}
+.nav li a {
+
+    color:#fff;
+    text-decoration:none;
+    padding:30px 19px;
+    display:block;
+}
+.nav li a:hover {
+    background-color:rgba(90, 138, 240, 0.1);
+
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;  
+}
+.nav li:hover > ul {
+    display:block;
+  
+}
+.nav li ul li {
+    position:relative; 
+    
+}
+.nav li ul li ul {
+    right:-140px;
+    top:0px; 
+}
+/*ico de redes*/
+.form-subcont {
+    width: 90%;
+    padding-top: 15px;
+    float: right;
+    margin-right:50 px;
+  }
+  .pie{
+    width: 100%;
+  background: rgb(228, 225, 225);
+  bottom: 0;
+  bottom: -1px;
+  height: 25px;
+ text-align-last: center;
+ text-decoration: black;
+  }
+ /*pie de pagina*/
+.pie {
+    text-align: center; 
+     text-decoration-color: black; 
+     font-size: 15px; 
+    }
+    </style>
+
+<body>
+    <!--menu-->
+    <header class="head">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html"> <img src="Taquito.PNG" alt="Taquito" width="40px" height="40px">Tres Tacos de
+                    Buche </a>
+            </div>
+
+            <ul class="nav">
+                <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="#"><i class="fas fa-users"></i>Nosotros</a>
+                    <ul>
+                        <li><a href="juan.html"><i class="fas fa-users"></i> Lider de proyectos</a></li>
+                        <li><a href="oscar.html"><i class="fas fa-users"></i> Analizador de sistemas</a></li>
+                        <li><a href="jazmin.html"><i class="fas fa-users"></i> Diseñadora Movil</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i>Programador</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i>Tester Software</a></li>
+                    </ul>
+                </li>
+                <li><a href="certificados.html"><i class="fas fa-award"></i>Certificado</a></li>
+                </li>
+            </ul>
+            </li>
+            </li>
+            </ul>
+
+    </header>
+    <!--peque formulario-->
+    <header class="foot">
+        <footer>
+            <div class="contenedor">
+                <h2 class="titulo-footer">Contactanos</h2>
+                <div class="footer">
+                    <form action="mailto:perlajazminzumheredia@gmail.com" method="POST" enctype="multipart/form-data"
+                        name="EmailForm">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+
+                        <label for="Email/">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Escribe tu Email" required />
+
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="body" for="mensaje" placeholder="Escribenos tu Mensaje"
+                            maxlength="300"></textarea>
+
+                        <input type="submit" name="enviar" value="Enviar Consulta" id="boton" />
+                        <a name="a-ubicacion"></a>
+                </div>
+                <center> 
+                <div class="form-subcont">
+                    <h2>Haga clik en el icono de las redes sociales</h2>
+                    <br>
+                    <a href="http://facebook.com"><img style="border-radius: 20px;" class="flat-contactos"
+                            src="faceb.jpg" alt="facebook" width="80px"> </a>
+                    <a href="http://twitter.com"><img style="border-radius: 20px;" class="flat-contactos" src="twit.jpg"
+                            alt="twitter" width="80px"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+5219982936302"><img style="border-radius: 20px;"
+                            class="flat-contactos" src="what.jpg" alt="whatsapp" width="80px"></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><img style="border-radius: 20px;"
+                            class="flat-contactos" src="ins.jpg" alt="instagram" width="80px"></a>
+                </div></center>
+
+              <center> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.602894073991!2d-86.83400357306783!3d21.168196015978623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b81891eba89%3A0xddebe59ce2a637aa!2sHerrajes%20del%20Caribe!5e0!3m2!1ses-419!2smx!4v1619012817615!5m2!1ses-419!2smx"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </center>  <br>
+                <a><i><b>Facebook:Tres Tacos de Buche &nbsp;
+                            twitter:@Tres Tacos de Buche
+                            whatsapp:cel:99854895 &nbsp;
+                            instagram: @Tres Tacos de Buche</b> </i></a>
+        </footer>
+    </header>
+    <!--mapa-->
+
+    <!--pie-->
+    <div class="pie">© Copyright 2021. Todos los derechos reservados. Desarrollado por Tres tacos de buche. </div>
+    </section>
+</body>
+</html>

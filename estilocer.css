@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedorcito {
+	width:100%;
+	max-width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	
+	
+}
+.cards{
+    width:100%;
+	max-width:100%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+
+body{
+    background-image: url(5.jpg);
+    width: 100%;
+    height: 650px;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+	color:black;
+    text-align: center;
+}
+
+
+.contenedor{
+    
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0 52px 0;
+}
+
+.cards{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 10px;
+	max-width:100%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 10px;
+}
+
+.sobre-nosotros{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.slogan{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.parrafo{
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+	background: rgba(255, 255, 255, .4);
+    color: rgba(38, 2, 122);
+}
+
+/*codigo de menu */
+.mhorizontal ul{
+    list-style-type: none;
+    font-family: cursive;
+    font-size: 25px;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+.mhorizontal li{
+    float: left
+}
+.mhorizontal li a{
+    text-decoration-line: none;
+    color: rgb(40, 5, 168);
+    padding: 15px 18px;
+    display: block;
+}
+.mhorizontal li a:hover:not(.active){
+    background-color: aqua;
+}
+

@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<script src="https://kit.fontawesome.com/057f5db532.js" crossorigin="anonymous"></script>
+		<style type="text/css">
+       	
+			
+			
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Servicios</a>
+					<ul>
+                        <li><a href="#"><i class="fas fa-users"></i>Nosotros</a></li>
+						<li><a href="#"><i class="fas fa-users"></i></script>
+						<li><a href="#"><i class="fas fa-users"></i></li>
+						<li><a href="#"><i class="fas fa-users"></i>Submenu4</a>
+							<ul>
+                                <a href="#"><i class="fas fa-award"></i>Certificado</a>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+<div class="nav"> 
+    <a href="#"><i class="fa fa-home"></i>Inicio</a> 
+     <a href="#"><i class="fas fa-users"></i>Nosotros</a>
+     <ul>
+         <li><a href="#"><i class="fas fa-users"></i>Lider de proyectos</a></li>
+         <li><a href="#"><i class="fas fa-users"></i>Analizador de sistemas</a></li>
+         <li><a href="#"><i class="fas fa-users"></i>Diseñadora Movil</a></li>
+         <li><a href="#"><i class="fas fa-users"></i>Programador</a></li>
+         <li><a href="#"><i class="fas fa-users"></i>Tester Software</a></li>
+     </ul>
+    <a href="#"><i class="fas fa-award"></i>Certificado</a>
+    <a href="#"><i class="far fa-address-book"></i>Contactanos</a>
+     </ul> 
+ </div>
