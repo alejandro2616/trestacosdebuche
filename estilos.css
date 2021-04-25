@@ -9,6 +9,16 @@ body{
     font-family: 'open sans';
     font-size: 16px;    
 }
+
+.contenedorcicicito {
+	width:100%;
+	max-width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	
+	
+}
+
 /*fondo de la pagina*/
 .record {
 	width: 100%;
